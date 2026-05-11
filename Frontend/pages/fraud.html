@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Detection - FraudShield</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div id="navbar"></div>
+
+<div class="d-flex">
+    <div id="sidebar"></div>
+
+    <div class="container p-4">
+        <h3>🚨 Test de détection de fraude</h3>
+
+        <div class="card mt-3 p-3" style="max-width: 400px;">
+            <input id="amount" class="form-control mt-2" placeholder="Montant (€)" type="number" min="0">
+            <button class="btn btn-danger mt-3 w-100" onclick="checkFraud()">Vérifier</button>
+            <h4 class="mt-4" id="result"></h4>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/api.js"></script>
+<script src="../assets/js/fraud.js"></script>
+
+</body>
+</html>
